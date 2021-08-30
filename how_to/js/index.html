@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Basic of JavaScript</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+
+</head>
+
+<body>
+    <header onmouseover="show_menu()" onmouseleave="close_menu()">
+        <div class="header">
+            <a id="logo" href="#">@MINUX</a>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SIGN-IN</a></li>
+                    <li><a href="#">SIGN-UP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr id="hr">
+        <nav>
+            <ul class="menu" id="submenu">
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-film"></i></span>
+                    <span class="title">MOVIES</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-tv"></i></span>
+                    <span class="title">TV-SHOW</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-gamepad"></i></span>
+                    <span class="title">GAMES</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-film"></i></span>
+                    <span class="title">OTHER</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="toggle"></div>
+    <div class="conteiner">
+        <ul class="sidemenu">
+            <li><a href="#">
+                <span class="s-icon"><i class="fas fa-film"></i></span>
+                <span class="s-title">MOVIES</span>
+            </a></li>
+    
+            <li><a href="#">
+                <span class="s-icon"><i class="fas fa-tv"></i></span>
+                <span class="s-title">TV-SHOW</span>
+            </a></li>
+    
+            <li><a href="#">
+                <span class="s-icon"><i class="fas fa-gamepad"></i></span>
+                <span class="s-title">GAMES</span>
+            </a></li>
+    
+            <li><a href="#">
+                <span class="s-icon"><i class="fas fa-film"></i></span>
+                <span class="s-title">OTHER</span>
+            </a></li>
+        </ul>
+    
+        <main>
+            <section class="cards">
+                <div class="card">
+                    <h2>JS - Document Methods</h2><hr>
+                    <div class="methods">
+                        <ol type="1">
+                            <li>getElementById(id)</li>
+                            <li>getElementByClassName(class)</li>
+                            <li>getElementById(id)</li>
+                            <li>getElementById(id)</li>
+                            <li>getElementById(id)</li>
+                            <li>getElementById(id)</li>
+                            <li>getElementById(id)</li>
+                            <li>getElementById(id)</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            
+            <div id="test">
+    
+            </div>
+           <h1 id="h1-id">Learning JavaScript</h1>
+           <button onclick="changeTitle()">CLICK ME</button>
+    
+    <!--        <button onclick="msg()">Click Me</button> -->
+        </main>
+    
+    </div>
+        
+    <footer>
+        <div class="dev">
+            <p>Developed by: <a href="#">Minux-Team</a></p>
+        </div><hr>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
