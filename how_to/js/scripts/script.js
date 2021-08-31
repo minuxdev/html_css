@@ -22,17 +22,45 @@ function changeTitle(){
 //     box.style.backgroundColor = "tomato"
 // }
 
+var width = screen.width
+var sidemenu = document.getElementById("side-menu2")
+
 var menu = document.getElementById("submenu")
 var hr = document.getElementById("hr")
 
-function show_menu(){
-    menu.style.display = "flex"
-    menu.style.height = "30px"
-    hr.style.display = "block"
+
+// console.log(width, sidemenu)
+
+
+function get_widht(){
+    if (width < 500)
+        document.getElementsByClassName("menu")
 }
 
-function close_menu() {
+
+function show_menu(){
+    if (width < 500)
+        menu.style.display = "none"
+    else{
+        menu.style.display = "flex"
+        menu.style.height = "30px"
+        hr.style.display = "block"}
+}
+
+
+function close_menu(){
     menu.style.display = "flex"
     menu.style.height = "0px"
     hr.style.display = "none"
+}
+
+var side_width = sidemenu.style.width
+function open_sidemenu(){
+    
+    console.log(side_width)
+
+    if (side_width < 200)
+        sidemenu.style.width = "200px"
+    else
+        sidemenu.style.width = "38px"
 }

@@ -51,29 +51,32 @@
         </nav>
     </header>
 
-    <div class="toggle"></div>
+    <div class="toggle" onclick="open_sidemenu()"></div>
+
     <div class="conteiner">
-        <ul class="sidemenu">
-            <li><a href="#">
-                <span class="s-icon"><i class="fas fa-film"></i></span>
-                <span class="s-title">MOVIES</span>
-            </a></li>
-    
-            <li><a href="#">
-                <span class="s-icon"><i class="fas fa-tv"></i></span>
-                <span class="s-title">TV-SHOW</span>
-            </a></li>
-    
-            <li><a href="#">
-                <span class="s-icon"><i class="fas fa-gamepad"></i></span>
-                <span class="s-title">GAMES</span>
-            </a></li>
-    
-            <li><a href="#">
-                <span class="s-icon"><i class="fas fa-film"></i></span>
-                <span class="s-title">OTHER</span>
-            </a></li>
-        </ul>
+        <div id="side-menu">
+            <ul id="side-menu2" class="sidemenu" onclick="style ='width: 200px'" onmouseleave="style = 'width: 38px'">
+                <li><a href="#">
+                    <span class="s-icon"><i class="fas fa-film"></i></span>
+                    <span class="s-title">MOVIES</span>
+                </a></li>
+        
+                <li><a href="#">
+                    <span class="s-icon"><i class="fas fa-tv"></i></span>
+                    <span class="s-title">TV-SHOW</span>
+                </a></li>
+        
+                <li><a href="#">
+                    <span class="s-icon"><i class="fas fa-gamepad"></i></span>
+                    <span class="s-title">GAMES</span>
+                </a></li>
+        
+                <li><a href="#">
+                    <span class="s-icon"><i class="fas fa-film"></i></span>
+                    <span class="s-title">OTHER</span>
+                </a></li>
+            </ul>
+        </div>
     
         <main>
             <section class="cards">
